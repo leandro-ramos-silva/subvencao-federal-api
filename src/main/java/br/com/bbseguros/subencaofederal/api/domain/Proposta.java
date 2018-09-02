@@ -3,12 +3,18 @@ package br.com.bbseguros.subencaofederal.api.domain;
 import java.io.Serializable;
 import java.util.Date;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+
+@Document(collection="proposta")
 public class Proposta implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
-	
+	@Id
 	private Integer id ;
+	
 	private String  nomeSegurado ;
 	private Date dataInicioVigencia ;
 	
