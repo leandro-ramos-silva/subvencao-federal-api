@@ -20,6 +20,7 @@ public class PropostaResource {
 	
 	@Autowired 
 	private PropostaService service ;
+	
 	@RequestMapping(method=RequestMethod.GET)
 	public ResponseEntity<List<Proposta>> findAll(){
 	
