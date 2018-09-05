@@ -18,8 +18,7 @@ public class Cultura implements Serializable {
   		ZONEAMENTOMAPA   VARCHAR2(1)
 	 */
 	@Id
-	private Integer id ;
-	
+	private Integer id ;	
 	private String codigoAticidadeBacen ;
 	private String nomeCulturaGlobal ;
 	private String descricaoTipoLavoura ;

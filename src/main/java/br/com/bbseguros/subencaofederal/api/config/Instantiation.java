@@ -44,15 +44,11 @@ public class Instantiation implements CommandLineRunner {
 		for(String strCultura : list ) {
 			
 			String[] params = strCultura.split(",") ;
-			culturaRepo.save(new Cultura(i++,params[0].trim(),params[1].trim(),params[2].trim(),params[3].trim(),params[4].trim())) ;
-			
+			culturaRepo.save(new Cultura(i++,params[0].trim(),params[1].trim(),params[2].trim(),params[3].trim(),params[4].trim())) ;			
 			
 		} 
 		
 		//list.forEach;
-		
-		
-		
 		//culturaRepo.saveAll(Arrays.asList(cultura1,cultura2)) ;
 
 	}
