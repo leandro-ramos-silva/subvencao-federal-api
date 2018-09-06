@@ -1,6 +1,7 @@
 package br.com.bbseguros.subencaofederal.api.domain;
-
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.Date;
 
 import org.springframework.data.annotation.Id;
@@ -77,6 +78,62 @@ public class Proposta implements Serializable {
 	
 	private String  nomeSegurado ;
 	private Date dataInicioVigencia ;
+	private String propostaSeguradora;
+	private Integer numProgramaSubvencao; 
+	private Date inicioVigencia;    
+	private Date dataProposta; 
+	private Date dataTerminoVigencia;   
+	private BigDecimal custoEmissao; 
+	private BigDecimal premioLiquido;
+	private BigDecimal valorSubvencaoFederal;
+	private String TipoDocumento;
+	private String Documento ;
+	private BigDecimal valorLimiteSegurado;    
+	private String nomeBairro;   
+	private String cep; 
+	private String complementoLogradouro;   
+	private String numeroComplemmentoLogradouro;   
+	private String nomePropriedade;   
+	private String nomeBairroPropriedade; 
+	private String cepPropriedade;    
+	private String nomeComplementoPropriedade;  
+	private String numeroComplementoPropriedade;  
+	private String telefone; 
+	private Integer quantidadeAnimais;  
+	private String anoSafra;
+	private BigDecimal areaSegurada; 
+	private String codigoAticidadeBacen; 
+	private Integer num_pes; 
+	private BigDecimal num_produtividade; 
+	private BigDecimal num_volumes;  
+	private String num_lat_cot_grau_gps;   
+	private String num_lat_cot_minuto_gps; 
+	private String val_lat_cot_segundo_gps;
+	private String nom_orient_lat_propriedade;  
+	private String num_long_cot_grau_gps;  
+	private String num_long_cot_minuto_gps;
+	private String val_long_cot_segundo_gps;
+	private String nom_orient_long_propriedade;
+	private String num_apolice;  
+	private Date fec_emissao_apolice;    
+	private Integer  	 cod_status_apolice;	
+	private Integer num_lote_segbr;    
+	private String num_proposta_mapa; 
+	private Integer cod_status;   
+	private BigDecimal val_subvencao_federal_real ; 
+	private Integer cod_ramo;
+	private String nom_cidade_propriedade; 
+	private String nom_cidade_segurado;    
+	private String uf_cep_propriedade;
+	private String uf_cep_segurado;   
+	private Integer endossoId;   
+	private Date dataEmisionEndosso;    
+	private BigInteger processoSusep;
+	private BigDecimal produtividadeEstimada; 
+	private Float percNivelCobertura;   
+	private Double classifProduto;    
+	    
+	
 	
 	public Proposta () {
 		
