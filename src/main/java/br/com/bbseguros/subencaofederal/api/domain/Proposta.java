@@ -74,8 +74,7 @@ public class Proposta implements Serializable {
 	 * 
 	 */
 	@Id
-	private Integer id ;
-	
+	private Integer id ;	
 	private String  nomeSegurado ;
 	private Date dataInicioVigencia ;
 	private String propostaSeguradora;
@@ -103,25 +102,25 @@ public class Proposta implements Serializable {
 	private String anoSafra;
 	private BigDecimal areaSegurada; 
 	private String codigoAticidadeBacen; 
-	private Integer num_pes; 
-	private BigDecimal num_produtividade; 
-	private BigDecimal num_volumes;  
-	private String num_lat_cot_grau_gps;   
-	private String num_lat_cot_minuto_gps; 
-	private String val_lat_cot_segundo_gps;
+	private Integer numPes; 
+	private BigDecimal produtividade; 
+	private BigDecimal volumes;  
+	private String latitudeGrau;   
+	private String latituderGrauMinuto; 
+	private String latitudeGrauSegundo;
 	private String nom_orient_lat_propriedade;  
 	private String num_long_cot_grau_gps;  
 	private String num_long_cot_minuto_gps;
 	private String val_long_cot_segundo_gps;
 	private String nom_orient_long_propriedade;
 	private String num_apolice;  
-	private Date fec_emissao_apolice;    
-	private Integer  	 cod_status_apolice;	
-	private Integer num_lote_segbr;    
-	private String num_proposta_mapa; 
-	private Integer cod_status;   
+	private Date dataEmissaoApolice;    
+	private Integer  	 statusApolice;	
+	private Integer loteLegado;    
+	private String propostaMapa; 
+	private Integer status;   
 	private BigDecimal val_subvencao_federal_real ; 
-	private Integer cod_ramo;
+	private Integer ramo;
 	private String nom_cidade_propriedade; 
 	private String nom_cidade_segurado;    
 	private String uf_cep_propriedade;
