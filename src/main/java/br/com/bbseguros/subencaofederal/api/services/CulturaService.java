@@ -26,10 +26,8 @@ public class CulturaService {
 	
 	public Cultura findByUd(Integer id) {
 		
-		Optional<Cultura> obj = repo.findById(id) ;
+		Optional<Cultura> obj = repo.findById(id) ;	
 		
-		
-		return obj.orElseThrow(() -> new ObjectNotFoundExecption("Nenhuma cultura encontrada") ) ;
-		
+		return obj.orElseThrow(() -> new ObjectNotFoundExecption("Nenhuma cultura encontrada") ) ;	
 	}
 }
