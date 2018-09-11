@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import br.com.bbseguros.subencaofederal.api.domain.Cultura;
 import br.com.bbseguros.subencaofederal.api.repositories.CulturaRepository;
-import org.hibernate.ObjectNotFoundException ;
+import br.com.bbseguros.subencaofederal.api.services.exception.ObjectNotFoundExecption;
 @Service
 public class CulturaService {
 	
@@ -26,9 +26,8 @@ public class CulturaService {
 	
 	public Cultura findByUd(Integer id) {
 		
-		Optional<Cultura> obj = repo.findById(id) ;		
+		Optional<Cultura> obj = repo.findById(id) ;	
 		
-		return obj.orElseThrow(() -> new ObjectNotFoundException("Nenhuma cultura encontrada", "culturas") ) ;
-		
+		return obj.orElseThrow(() -> new ObjectNotFoundExecption("Nenhuma cultura encontrada") ) ;	
 	}
 }

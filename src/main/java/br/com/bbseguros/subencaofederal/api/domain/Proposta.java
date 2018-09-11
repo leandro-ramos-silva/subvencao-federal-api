@@ -1,6 +1,7 @@
 package br.com.bbseguros.subencaofederal.api.domain;
-
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.Date;
 
 import org.springframework.data.annotation.Id;
@@ -73,10 +74,65 @@ public class Proposta implements Serializable {
 	 * 
 	 */
 	@Id
-	private Integer id ;
-	
+	private Integer id ;	
 	private String  nomeSegurado ;
 	private Date dataInicioVigencia ;
+	private String propostaSeguradora;
+	private Integer numProgramaSubvencao; 
+	private Date inicioVigencia;    
+	private Date dataProposta; 
+	private Date dataTerminoVigencia;   
+	private BigDecimal custoEmissao; 
+	private BigDecimal premioLiquido;
+	private BigDecimal valorSubvencaoFederal;
+	private String TipoDocumento;
+	private String Documento ;
+	private BigDecimal valorLimiteSegurado;    
+	private String nomeBairro;   
+	private String cep; 
+	private String complementoLogradouro;   
+	private String numeroComplemmentoLogradouro;   
+	private String nomePropriedade;   
+	private String nomeBairroPropriedade; 
+	private String cepPropriedade;    
+	private String nomeComplementoPropriedade;  
+	private String numeroComplementoPropriedade;  
+	private String telefone; 
+	private Integer quantidadeAnimais;  
+	private String anoSafra;
+	private BigDecimal areaSegurada; 
+	private String codigoAticidadeBacen; 
+	private Integer numPes; 
+	private BigDecimal produtividade; 
+	private BigDecimal volumes;  
+	private String latitudeGrau;   
+	private String latituderGrauMinuto; 
+	private String latitudeGrauSegundo;
+	private String nomeOrientacaoLatitudePropriedade;  
+	private String longitudeGrau;  
+	private String longitudeMinuto;
+	private String longitudeSegundo;
+	private String nomeOrientacaoLongitudePropriedade;
+	private String apolice;  
+	private Date dataEmissaoApolice;    
+	private Integer  	 statusApolice;	
+	private Integer loteLegado;    
+	private String propostaMapa; 
+	private Integer status;   
+	private BigDecimal valorSubvencaoFederalReal ; 
+	private Integer ramo;
+	private String nomeCidadePropriedade; 
+	private String nomeCidadeSegurado;    
+	private String ufCepPropriedade;
+	private String ufCepSegurado;   
+	private Integer endossoId;   
+	private Date dataEmisionEndosso;    
+	private BigInteger processoSusep;
+	private BigDecimal produtividadeEstimada; 
+	private Float percNivelCobertura;   
+	private Double classifProduto;    
+	    
+	
 	
 	public Proposta () {
 		
