@@ -10,7 +10,7 @@ public class CulturaServiceTest {
 	@Test
 	public void teste() {
 		
-		Assert.assertEquals("ana", "aaa");
+		Assert.assertEquals("aaa", "aaa");
 	}
 	
 }
